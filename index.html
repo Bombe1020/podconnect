@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Podcast Guest Signup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
+  <header class="flex items-center justify-between px-8 py-5 bg-gray-800 shadow-md">
+    <h1 class="text-2xl font-bold text-emerald-400">🎙️ PodConnect</h1>
+    <nav class="space-x-6">
+      <a href="#" class="hover:underline text-gray-300">Home</a>
+      <a href="#" class="hover:underline text-gray-300">Shows</a>
+      <a href="#" class="hover:underline text-gray-300">Advertising</a>
+      <input type="text" placeholder="Search" class="px-3 py-1 rounded bg-gray-700 text-sm text-white border border-gray-600" />
+    </nav>
+  </header>
+
+  <main class="flex-grow flex flex-col items-center p-8 space-y-14">
+    <!-- Guest Booking Form -->
+    <section class="w-full max-w-xl bg-gray-800 border border-gray-700 p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl lg:text-4xl font-bold text-center text-emerald-400 mb-8">Be Our Guest</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm mb-1 text-gray-300">Full Name</label>
+          <input type="text" placeholder="John Doe" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1 text-gray-300">Phone</label>
+          <input type="text" placeholder="+2779 303 2959" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1 text-gray-300">Email</label>
+          <input type="email" placeholder="you@example.com" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1 text-gray-300">Topic / Description</label>
+          <textarea placeholder="Tell us what you'd like to share..." class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-emerald-500 hover:bg-emerald-600 w-full py-2 rounded text-white font-semibold">Submit Request</button>
+      </form>
+    </section>
+
+    <!-- Recent Episodes -->
+    <section class="w-full max-w-5xl text-center">
+      <h2 class="text-xl font-semibold mb-4 text-gray-100">Recent Episodes</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-left">
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md">
+          <img src="O-que-e-podcast-1-1070x640.jpg" alt="Episode 1" class="w-full">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Episode 1: The Launch</h3>
+            <p class="text-sm text-gray-300">Discover how we got started and what to expect from our show.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md">
+          <img src="O-que-e-podcast-1-1070x640.jpg" alt="Episode 2" class="w-full">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Episode 2: Innovation Talks</h3>
+            <p class="text-sm text-gray-300">A chat with a tech entrepreneur about growth and resilience.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md">
+          <img src="O-que-e-podcast-1-1070x640.jpg" alt="Episode 3" class="w-full">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Episode 3: Mental Fitness</h3>
+            <p class="text-sm text-gray-300">We explore mindset, productivity, and creative focus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming -->
+    <section class="w-full max-w-5xl text-center">
+      <h2 class="text-xl font-semibold mb-4 text-gray-100">Upcoming 🔥</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md">
+          <img src="O-que-e-podcast-1-1070x640.jpg" alt="Upcoming 1" class="w-full">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Coming Soon: Voices of Change</h3>
+            <p class="text-sm text-gray-300">A conversation with community leaders driving positive impact.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md">
+          <img src="O-que-e-podcast-1-1070x640.jpg" alt="Upcoming 2" class="w-full">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Next Up: Digital Nomads</h3>
+            <p class="text-sm text-gray-300">Learn how creators live and work while traveling the world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 bg-gray-800 text-sm text-gray-400">
+    <nav class="space-x-4 mb-2">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Contact Us</a>
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Terms</a>
+    </nav>
+    <p>© 2025 PodConnect | All rights reserved</p>
+  </footer>
+</body>
+</html>
